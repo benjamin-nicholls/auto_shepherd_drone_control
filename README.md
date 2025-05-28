@@ -16,7 +16,7 @@ Ensure your device has the following installed / available:
 `Remote Tele-Operation` – Developing the Android application further, integrate capabilities to send the drone to given coordinates, generating flight plans and risk assessments for manual approval. 
 
 ### Stretch Activity:
-`Autonomous Planning` – With the positions of detected targets received, develop an approach to autonomously manoeuvring the drone to keep the targets within the frame, making considerations to battery lifetime and hot-swaping drones. 
+`Autonomous Planning` – With the positions of detected targets received, develop an approach to autonomously manoeuvring the drone to keep the targets within the frame, making considerations to battery lifetime and hot-swapping drones. 
 
 ## Outcomes:
 With the completion of these activities, the group will have the necessary pipelines in place for connecting data streams to the other groups in the project for consumption into ROS2 processes. 
