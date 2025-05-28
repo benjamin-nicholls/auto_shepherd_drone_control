@@ -6,7 +6,8 @@ To provide the 'eye in the sky'. Develop the infrastructure for streaming the da
 ## Preparation in Advance:
 Ensure your device has the following installed / available: 
 - ROS2 Humble (Installed with Ubuntu or as a Docker image) 
-- VS Code 
+- VS Code
+- Android Studio
 
 ## Activities:
 ### Primary Activity:
