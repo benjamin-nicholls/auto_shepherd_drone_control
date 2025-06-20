@@ -10,6 +10,7 @@ class GPSPublisher(Node):
         super().__init__("gps_publisher")
         self.publisher_ = self.create_publisher(NavSatFix, "uav_gps", 10)
 
+        self.altitude_offset = 90.0
         # Create a TCP server
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.sock.bind(("0.0.0.0", 5000))  # Match port with ESP8266
@@ -38,7 +39,7 @@ class GPSPublisher(Node):
             msg = NavSatFix()
             msg.latitude = float(lat_str)
             msg.longitude = float(lon_str)
-            msg.altitude = max(0, float(alt_str) - 90.0)
+            msg.altitude = max(0, float(alt_str) - self.altitude_offset)
             msg.header.frame_id = "gps"
             self.publisher_.publish(msg)
             # print("Num of satellites: " + num_sats + "\n")
