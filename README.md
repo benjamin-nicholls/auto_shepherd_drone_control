@@ -64,7 +64,7 @@ Requires ffmpeg to be installed and accessable on the system. Along with the fol
     - The matrices can be used to calculate FOV etc.
 
 
-### TODO package
+### ESP8266_gps package
 
 - Topic: `/uav_gps`
     - Message type: `sensor_msgs/msg/NatSatFix`
